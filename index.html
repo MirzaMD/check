@@ -6,12 +6,33 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header class=" h-[100px] w-full bg-blue-300 border-4 border-red-300 flex justify-between items-center"><!--this is the change-->
-    <nav class="mx-[30px] text-gray-200 hover:text-[20px] cursor-pointer hover:border-[6px] shadow-inner border-green-300">HOME</nav>
-    <a href="#"><nav class=" mx-2 font-mono hover:text-lg hover:border-b-[5px] border-green-300 hover:cursor-pointer">ABOUT</nav></a>
-    <nav>SHOPPING</nav>
-    <nav class="mx-3">CONTACT US</nav>
-</header>
+<style>
+    nav:hover{
+        border:inset;
+        border-color:aqua;
+        transition: 0.35s;
+    }
+</style>
+<body class="bg-gray-400">
+    <h1 class="text-lg sm:text-4xl mt-[50px] bg-red-300 text-center py-3 sm:py-5">Website build</h1>
+    <header class="flex justify-center items-center space-x-[80px] sm:space-x-[400px] h-[150px] cursor-pointer">
+        <nav>HOME</nav>
+        <nav>ABOUT US</nav>
+        <nav>CONTACT US</nav>
+    </header>
+    <main>
+        <div class=" text-lg sm:text-5xl h-[120px] bg-white flex items-center justify-center">
+            <h1>WELCOME</h1>
+        </div>
+        <section class="grid grid-cols-1 sm:grid-cols-4 mt-10">
+            <img src="img/astroWorld.jpg" alt="Astro World" class="h-[100px] sm:h-[200px] rounded-full">
+            <img src="img/astroWorld.jpg" alt="Astro World" class="h-[100px] sm:h-[200px] rounded-full">
+            <img src="img/astroWorld.jpg" alt="Astro World" class="h-[100px] sm:h-[200px] rounded-full">
+            <img src="img/astroWorld.jpg" alt="Astro World" class="h-[100px] sm:h-[200px] rounded-full">
+        </section>
+        <footer class="flex justify-center items-center mt-10">
+            <button class="bg-red-300 text-lg sm:text-3xl text-white w-full">refresh</button>
+        </footer>
+    </main>
 </body>
 </html>
